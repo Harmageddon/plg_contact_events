@@ -6,7 +6,7 @@
 	<license>GNU GPL 2.0</license>
 	<authorEmail>constantin@zweiiconkram.de</authorEmail>
 	<authorUrl>www.zweiiconkram.de</authorUrl>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<description>Small plugin to test the newly added plugin events for com_contact.</description>
 	<files>
 		<filename plugin="contactevents">contactevents.php</filename>
