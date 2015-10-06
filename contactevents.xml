@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" version="3.4" method="upgrade">
+	<name>Contact Events Test</name>
+	<author>Constantin Romankiewicz</author>
+	<creationDate>2015</creationDate>
+	<license>GNU GPL 2.0</license>
+	<authorEmail>constantin@zweiiconkram.de</authorEmail>
+	<authorUrl>www.zweiiconkram.de</authorUrl>
+	<version>1.0</version>
+	<description>Small plugin to test the newly added plugin events for com_contact.</description>
+	<files>
+		<filename plugin="contactevents">contactevents.php</filename>
+	</files>
+</extension>
