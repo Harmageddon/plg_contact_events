@@ -28,7 +28,13 @@ class PlgContentContactEvents extends JPlugin
 	 */
 	public function onContentPrepare($context, &$item, $params, $page = 0)
 	{
-		$allowed_contexts = array('com_contact.contact', 'com_contact.category', 'com_contact.category.title', 'com_contact.featured');
+		$allowed_contexts = array(
+			'com_contact.contact',
+			'com_contact.category',
+			'com_contact.category.title',
+			'com_contact.category.description',
+			'com_contact.featured'
+		);
 
 		if (!in_array($context, $allowed_contexts))
 		{
@@ -37,11 +43,15 @@ class PlgContentContactEvents extends JPlugin
 
 		if ($context === 'com_contact.category.title')
 		{
-			$item->text .= " (edited)";
+			$item->text .= " (edited category title)";
+		}
+		elseif ($context === 'com_contact.category.description')
+		{
+			$item->text .= " (edited category description)";
 		}
 		elseif ($context === 'com_contact.contact' || $context === 'com_contact.category')
 		{
-			$item->name .= " (edited)";
+			$item->name .= " (edited contact title)";
 		}
 
 		return true;
