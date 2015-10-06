@@ -39,7 +39,7 @@ class PlgContentContactEvents extends JPlugin
 		{
 			$item->text .= " (edited)";
 		}
-		elseif ($context === 'com_contact.category')
+		elseif ($context === 'com_contact.contact' || $context === 'com_contact.category')
 		{
 			$item->name .= " (edited)";
 		}
